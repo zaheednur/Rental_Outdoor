@@ -1,0 +1,75 @@
+body {
+    font-family: "Poppins";
+}
+
+.th-active {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(252 207 47 / var(--tw-ring-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.th-inactive {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(237 238 240 / var(--tw-ring-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.th-inactive:hover {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgb(252 207 47 / var(--tw-ring-opacity));
+}
+
+/* Default styling untuk logo */
+.logo {
+    width: 150px; /* Ukuran default logo */
+    height: auto;
+}
+
+/* Default styling untuk icon notifikasi */
+.notification-icon {
+    width: 44px;
+    height: 44px;
+}
+
+/* Styling untuk mobile */
+@media (max-width: 640px) {
+    .logo {
+        width: 80px; /* Ukuran lebih kecil untuk mobile */
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 20px; /* Geser logo sedikit ke kanan */
+    }
+    
+    .notification-icon {
+        position: absolute;
+        top: 10px;
+        right: 20px; /* Menggeser icon lebih ke kiri */
+    }
+
+    #Top-navbar {
+        padding: 0;
+    }
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan lebih besar */
+}
+
+.shadow-xl {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih kuat saat hover */
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
